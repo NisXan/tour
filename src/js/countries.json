@@ -1,0 +1,108 @@
+[   
+    {
+        "Africa": [
+            {"name":"Algeria"},
+            {"name":"Angola"},
+            {"name":"Benin"},
+            {"name":"Botswana"},
+            {"name":"British Indian Ocean Territory"},
+            {"name":"Burkina Faso"},
+            {"name":"Burundi"},
+            {"name":"Cameroon"},
+            {"name":"Cape Verde"},
+            {"name":"Central African Republic"},
+            {"name":"Chad"},
+            {"name":"Comoros"},
+            {"name":"Congo"}
+        ]
+    },
+    {
+        "Asia": [
+            {"name":"Afghanistan"},
+            {"name":"Armenia"},
+            {"name":"Azerbaijan"},
+            {"name":"Bahrain"},
+            {"name":"Bangladesh"},
+            {"name":"Bhutan"},
+            {"name":"Brunei"},
+            {"name":"Cambodia"},
+            {"name":"China"},
+            {"name":"Cyprus"},
+            {"name":"Georgia"},
+            {"name":"Hong Kong"},
+            {"name":"India"},
+            {"name":"Indonesia"},
+            {"name":"Iran"},
+            {"name":"Iraq"},
+            {"name":"Israel"},
+            {"name":"Japan"},
+            {"name":"Jordan"},
+            {"name":"Kazakhstan"},
+            {"name":"Kuwait"},
+            {"name":"Kyrgyzstan"},
+            {"name":"Laos"},
+            {"name":"Lebanon"},
+            {"name":"Macao"},
+            {"name":"Malaysia"},
+            {"name":"Maldives"},
+            {"name":"Mongolia"},
+            {"name":"Myanmar"},
+            {"name":"Nepal"},
+            {"name":"North Korea"}
+        ]
+    },
+    {
+        "Europe": [
+            {"name":"Albania"},
+            {"name":"Andorra"},
+            {"name":"Austria"},
+            {"name":"Belarus"},
+            {"name":"Belgium"},
+            {"name":"Bosnia and Herzegovina"},
+            {"name":"Bulgaria"},
+            {"name":"Croatia"},
+            {"name":"Czech Republic"},
+            {"name":"Denmark"},
+            {"name":"England"},
+            {"name":"Estonia"},
+            {"name":"Faroe Islands"},
+            {"name":"Finland"},
+            {"name":"France"}
+        ]
+    },
+    {
+        "North America": [
+            {"name":"Anguilla"},
+            {"name":"Antigua and Barbuda"},
+            {"name":"Aruba"},
+            {"name":"Bahamas"},
+            {"name":"Barbados"},
+            {"name":"Belize"},
+            {"name":"Bermuda"},
+            {"name":"Canada"},
+            {"name":"Cayman Islands"},
+            {"name":"Costa Rica"},
+            {"name":"Cuba"},
+            {"name":"Dominica"},
+            {"name":"Dominican Republic"},
+            {"name":"Greenland"},
+            {"name":"Grenada"},
+            {"name":"Guadeloupe"}
+        ]
+    },
+    {
+        "South America": [
+            {"name":"Argentina"},
+            {"name":"Bolivia"},
+            {"name":"Brazil"},
+            {"name":"Chile"},
+            {"name":"Colombia"},
+            {"name":"Ecuador"},
+            {"name":"Falkland Islands"},
+            {"name":"French Guiana"},
+            {"name":"Guyana"},
+            {"name":"Paraguay"},
+            {"name":"Peru"}
+        ]
+    }
+]

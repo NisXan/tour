@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Горячие туры</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+  <link rel="shortcut icon" href="img/manifest/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="build/styles.css">
+  <script src="build/build.js" defer></script>
+</head>
+<body>
+  <header class="menu">
+    <button class="menu__burger" aria-label="Открыть меню"></button>
+    <div class="menu__container">
+      <div class="menu__container--row">
+        <div class="selector" id="countries">
+          <div class="selector__title">Страны</div>
+          <div class="selector__container"></div>
+        </div>
+        <div class="selector" id="date">
+          <div class="selector__title">Даты</div>
+        </div>
+      </div>
+      <div class="menu__container--row">
+        <div class="selector" id="type">
+          <div class="selector__title">Тип путешествия</div>
+          <div class="selector__container"></div>
+        </div>
+      </div>
+      <button class="menu__container--button" id="search">НАЙТИ</button>
+      <nav class="menu__container--nav">
+        <ul>
+          <li><a href="#">Путешествия</a></li>
+          <li><a href="#">О нас</a></li>
+          <li><a href="#">Отзывы</a></li>
+          <li><a href="#">Блог</a></li>
+        </ul>
+      </nav>
+      <div class="menu__container--footer">
+        <a href="tel:88001234567" class="menu__container--phone">8 (800) 123-45-67</a>
+        <button class="menu__container--button callback-init">ПОДБЕРИТЕ МНЕ ТУР</button>
+      </div>      
+    </div>
+  </header>
+  <main>
+    <section id="hot" class="hot">
+      <h2 class="hot__title">Горящие туры</h2>
+      <div class="hot__filter">
+        <span class="hot__filter--item tags" data-countries="spain">Испания</span>
+        <span class="hot__filter--item tags" data-countries="italy">Италия</span>
+        <span class="hot__filter--item tags" data-countries="iseland">Исландия</span>
+        <span class="hot__filter--item tags" data-countries="turkey">Турция</span>
+      </div>
+      <div class="hot__filter--empty">Результатов по выбранному фильтру не найдено!</div>
+      <div class="hot__container carousel">        
+        <div class="card italy">
+          <img class="card__img" src="src/img/articles/687_anons-min_480_275_5_90.png" alt="Под небом Тосканы">
+          <div class="card__textblock">
+            <div class="card__textblock--price">от 118 112</div>
+            <span class="card__textblock--tag tags" data-countries="italy">Италия</span>
+            <h4 class="card__textblock--title">Под небом Тосканы</h4>
+            <p class="card__textblock--path">Сансеполькро — (Перуджа) — Ассизи — Губбио — (Сиена) — Ла Верна — Ангиари — Монтерки — Ареццо — Кортона — (Пиенца) - (Монтепульчано)</p>
+            <div class="card__textblock--info">
+              <span>8 дней / 7 ночей</span>
+              <span>Русский язык</span>
+            </div>
+            <div class="card__textblock--date">
+              28.04.19 - 05.05.19 и еще 3 даты
+            </div>
+            <span class="card__textblock--extra">
+              Авиаперелет включен!
+            </span>
+          </div>
+        </div>
+        <div class="card iseland">
+          <img class="card__img" src="src/img/articles/430_anons_480_275_5_90.png" alt="Майские каникулы в Исландии">
+          <div class="card__textblock">
+            <div class="card__textblock--price">140 715</div>
+            <span class="card__textblock--tag tags" data-countries="iseland">Исландия</span>
+            <h4 class="card__textblock--title">Майские каникулы в Исландии</h4>
+            <p class="card__textblock--path">Рейкьявик — Тингвеллир — Гюдльфосс — Скафтафедль — Сельяландсфосс — Скоугафосс — Йёкюльсаурлоун — Голубая Лагуна — Снайфельсйёкутль — Arnarstapi — Рейкьявик</p>
+            <div class="card__textblock--info">
+              <span>8 дней / 7 ночей</span>
+              <span>Русский язык</span>
+            </div>
+            <div class="card__textblock--date">
+              27.04.19 - 04.05.19
+            </div>
+          </div>
+        </div>
+        <div class="card turkey">
+          <img class="card__img" src="src/img/articles/640anons_480_275_5_90.png" alt="Открытие Турции">
+          <div class="card__textblock">
+            <div class="card__textblock--price">37 302</div>
+            <span class="card__textblock--tag tags" data-countries="turkey">Турция</span>
+            <h4 class="card__textblock--title">Открытие Турции</h4>
+            <p class="card__textblock--path">Стамбул — Анкара — Каппадокия — Конья — Памуккале — Эфес — Кушадасы — Пергам — Ассос — Троя — Стамбул</p>
+            <div class="card__textblock--info">
+              <span>8 дней / 7 ночей</span>
+              <span>Русский язык</span>
+            </div>
+            <div class="card__textblock--date">
+              28.04.19 - 05.05.19 и еще 3 даты
+            </div>
+          </div>
+        </div>
+        <div class="card norway">
+          <img class="card__img" src="src/img/articles/117_anons-min_480_275_5_90.png" alt="От Свальбарда до Груманта">
+          <div class="card__textblock">
+            <div class="card__textblock--price">от 118 112 </div>
+            <span class="card__textblock--tag tags" data-countries="norway">Норвегия, Шпицберген</span>
+            <h4 class="card__textblock--title">От Свальбарда до Груманта</h4>
+            <div class="card__textblock--info">
+              <span>8 дней / 7 ночей</span>
+              <span>Русский язык</span>
+            </div>
+            <div class="card__textblock--date">
+              28.04.19 - 05.05.19 и еще 3 даты
+            </div>
+            <span class="card__textblock--extra">
+              Гарантированный тур!
+            </span>
+          </div>
+        </div>
+        <div class="card italy">
+          <img class="card__img" src="src/img/articles/687_anons-min_480_275_5_90.png" alt="Под небом Тосканы">
+          <div class="card__textblock">
+            <div class="card__textblock--price">от 118 112</div>
+            <span class="card__textblock--tag tags" data-countries="italy">Италия</span>
+            <h4 class="card__textblock--title">Под небом Тосканы</h4>
+            <p class="card__textblock--path">Сансеполькро — (Перуджа) — Ассизи — Губбио — (Сиена) — Ла Верна — Ангиари — Монтерки — Ареццо — Кортона — (Пиенца) - (Монтепульчано)</p>
+            <div class="card__textblock--info">
+              <span>8 дней / 7 ночей</span>
+              <span>Русский язык</span>
+            </div>
+            <div class="card__textblock--date">
+              28.04.19 - 05.05.19 и еще 3 даты
+            </div>
+          </div>
+        </div>
+        <div class="card iseland">
+          <img class="card__img" src="src/img/articles/430_anons_480_275_5_90.png" alt="Майские каникулы в Исландии">
+          <div class="card__textblock">
+            <div class="card__textblock--price">140 715</div>
+            <span class="card__textblock--tag tags" data-countries="iseland">Исландия</span>
+            <h4 class="card__textblock--title">Майские каникулы в Исландии</h4>
+            <p class="card__textblock--path">Рейкьявик — Тингвеллир — Гюдльфосс — Скафтафедль — Сельяландсфосс — Скоугафосс — Йёкюльсаурлоун — Голубая Лагуна — Снайфельсйёкутль — Arnarstapi — Рейкьявик</p>
+            <div class="card__textblock--info">
+              <span>8 дней / 7 ночей</span>
+              <span>Русский язык</span>
+            </div>
+            <div class="card__textblock--date">
+              27.04.19 - 04.05.19
+            </div>
+          </div>
+        </div>
+        <div class="card turkey">
+          <img class="card__img" src="src/img/articles/640anons_480_275_5_90.png" alt="Открытие Турции">
+          <div class="card__textblock">
+            <div class="card__textblock--price">37 302</div>
+            <span class="card__textblock--tag tags" data-countries="turkey">Турция</span>
+            <h4 class="card__textblock--title">Открытие Турции</h4>
+            <p class="card__textblock--path">Стамбул — Анкара — Каппадокия — Конья — Памуккале — Эфес — Кушадасы — Пергам — Ассос — Троя — Стамбул</p>
+            <div class="card__textblock--info">
+              <span>8 дней / 7 ночей</span>
+              <span>Русский язык</span>
+            </div>
+            <div class="card__textblock--date">
+              28.04.19 - 05.05.19 и еще 3 даты
+            </div>
+          </div>
+        </div>
+        <div class="card norway">
+          <img class="card__img" src="src/img/articles/117_anons-min_480_275_5_90.png" alt="От Свальбарда до Груманта">
+          <div class="card__textblock">
+            <div class="card__textblock--price">от 118 112 </div>
+            <span class="card__textblock--tag tags" data-countries="norway">Норвегия, Шпицберген</span>
+            <h4 class="card__textblock--title">От Свальбарда до Груманта</h4>
+            <div class="card__textblock--info">
+              <span>8 дней / 7 ночей</span>
+              <span>Русский язык</span>
+            </div>
+            <div class="card__textblock--date">
+              28.04.19 - 05.05.19 и еще 3 даты
+            </div>
+          </div>
+        </div>
+        <div class="card italy">
+          <img class="card__img" src="src/img/articles/687_anons-min_480_275_5_90.png" alt="Под небом Тосканы">
+          <div class="card__textblock">
+            <div class="card__textblock--price">от 118 112</div>
+            <span class="card__textblock--tag tags" data-countries="italy">Италия</span>
+            <h4 class="card__textblock--title">Под небом Тосканы</h4>
+            <p class="card__textblock--path">Сансеполькро — (Перуджа) — Ассизи — Губбио — (Сиена) — Ла Верна — Ангиари — Монтерки — Ареццо — Кортона — (Пиенца) - (Монтепульчано)</p>
+            <div class="card__textblock--info">
+              <span>8 дней / 7 ночей</span>
+              <span>Русский язык</span>
+            </div>
+            <div class="card__textblock--date">
+              28.04.19 - 05.05.19 и еще 3 даты
+            </div>
+          </div>
+        </div>
+        <div class="card iseland">
+          <img class="card__img" src="src/img/articles/430_anons_480_275_5_90.png" alt="Майские каникулы в Исландии">
+          <div class="card__textblock">
+            <div class="card__textblock--price">140 715</div>
+            <span class="card__textblock--tag tags" data-countries="iseland">Исландия</span>
+            <h4 class="card__textblock--title">Майские каникулы в Исландии</h4>
+            <p class="card__textblock--path">Рейкьявик — Тингвеллир — Гюдльфосс — Скафтафедль — Сельяландсфосс — Скоугафосс — Йёкюльсаурлоун — Голубая Лагуна — Снайфельсйёкутль — Arnarstapi — Рейкьявик</p>
+            <div class="card__textblock--info">
+              <span>8 дней / 7 ночей</span>
+              <span>Русский язык</span>
+            </div>
+            <div class="card__textblock--date">
+              27.04.19 - 04.05.19
+            </div>
+          </div>
+        </div>
+        <div class="card turkey">
+          <img class="card__img" src="src/img/articles/640anons_480_275_5_90.png" alt="Открытие Турции">
+          <div class="card__textblock">
+            <div class="card__textblock--price">37 302</div>
+            <span class="card__textblock--tag tags" data-countries="turkey">Турция</span>
+            <h4 class="card__textblock--title">Открытие Турции</h4>
+            <p class="card__textblock--path">Стамбул — Анкара — Каппадокия — Конья — Памуккале — Эфес — Кушадасы — Пергам — Ассос — Троя — Стамбул</p>
+            <div class="card__textblock--info">
+              <span>8 дней / 7 ночей</span>
+              <span>Русский язык</span>
+            </div>
+            <div class="card__textblock--date">
+              28.04.19 - 05.05.19 и еще 3 даты
+            </div>
+          </div>
+        </div>
+        <div class="card norway">
+          <img class="card__img" src="src/img/articles/117_anons-min_480_275_5_90.png" alt="От Свальбарда до Груманта">
+          <div class="card__textblock">
+            <div class="card__textblock--price">от 118 112 </div>
+            <span class="card__textblock--tag tags" data-countries="norway">Норвегия, Шпицберген</span>
+            <h4 class="card__textblock--title">От Свальбарда до Груманта</h4>
+            <div class="card__textblock--info">
+              <span>8 дней / 7 ночей</span>
+              <span>Русский язык</span>
+            </div>
+            <div class="card__textblock--date">
+              28.04.19 - 05.05.19 и еще 3 даты
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="hot__filter--loader">ЗАГРУЗИТЬ ЕЩЕ</button>
+    </section>
+    <section id="popular" class="popular">
+      <h2 class="popular__title">Популярные туры</h2>
+      <div class="popular__container carousel">
+        <div class="card">
+          <img class="card__img" src="src/img/articles/687_anons-min_480_275_5_90.png" alt="Под небом Тосканы">
+          <div class="card__textblock">
+            <div class="card__textblock--price">от 118 112</div>
+            <span class="card__textblock--tag">Италия</span>
+            <h4 class="card__textblock--title">Под небом Тосканы</h4>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card__img" src="src/img/articles/430_anons_480_275_5_90.png" alt="Майские каникулы в Исландии">
+          <div class="card__textblock">
+            <div class="card__textblock--price">140 715</div>
+            <span class="card__textblock--tag">Исландия</span>
+            <h4 class="card__textblock--title">Майские каникулы в Исландии</h4>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card__img" src="src/img/articles/640anons_480_275_5_90.png" alt="Открытие Турции">
+          <div class="card__textblock">
+            <div class="card__textblock--price">37 302</div>
+            <span class="card__textblock--tag">Турция</span>
+            <h4 class="card__textblock--title">Открытие Турции</h4>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card__img" src="src/img/articles/117_anons-min_480_275_5_90.png" alt="От Свальбарда до Груманта">
+          <div class="card__textblock">
+            <div class="card__textblock--price">от 118 112 </div>
+            <span class="card__textblock--tag">Норвегия, Шпицберген</span>
+            <h4 class="card__textblock--title">От Свальбарда до Груманта</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="callback" class="callback">
+      <h2 class="callback__title">Заявка на подбор путеешествия</h2>
+      <form class="form" method="post" action="">
+        <h4 class="form__title">НЕМНОГО О ВАС</h4>
+        <div class="form__container">
+          <label class="form__label" for="name">ИМЯ <span class="required">*</span>
+            <input class="form__input" type="name" id="name" name="name" require>
+          </label>
+
+          <label class="form__label" for="phone">ТЕЛЕФОН
+            <input class="form__input" type="phone" id="phone" name="phone" placeholder="+7___ ___ __ __">
+          </label>
+        </div>
+
+        <h4 class="form__title">О ПУТЕШЕСТВИИ</h4>
+        <div class="form__container">
+          <label class="form__label" for="where">КУДА И КОГДА ХОТИТЕ ПОЕХАТЬ? <span class="require">*</span>
+            <input class="form__input" type="where" id="where" name="where" placeholder="Континент, страна или город" required>
+          </label>
+
+          <label class="form__label" for="when">КОГДА?
+            <input class="form__input" type="when" id="when" name="when" placeholder="Даты или временной  интервал">
+          </label>
+        </div>
+
+        <div class="form__box">
+          <h4 class="form__title">УДОБНЫЙ СПОСОБ СВЯЗИ</h4>
+          <div class="form__container--checkbox">
+            <input class="form__checkbox" type="checkbox" id="viber" name="viber">
+            <label class="form__label--checkbox" for="viber">VIBER</label>
+                    
+            <input class="form__checkbox" type="checkbox" id="whatsapp" name="whatsapp">
+            <label class="form__label--checkbox" for="whatsapp">WHATSAPP</label>
+            
+            <input class="form__checkbox" type="checkbox" id="email" name="email">
+            <label class="form__label--checkbox" for="email">ПОЧТА</label>
+            
+            <input class="form__checkbox" type="checkbox" id="tel" name="tel">
+            <label class="form__label--checkbox" for="tel">ТЕЛЕФОН</label>
+          </div>
+        </div>
+
+        <div class="form__box two-row">
+          <h4 class="form__title">ОТКУДА УЗНАЛИ О НАС</h4>
+          <div class="form__container--checkbox">
+            <input class="form__checkbox" type="checkbox" id="internet" name="internet">
+            <label class="form__label" for="internet">ИНТЕРНЕТ</label>        
+            
+            <input class="form__checkbox" type="checkbox" id="recomend" name="recomend">
+            <label class="form__label--checkbox" for="recomend">РЕКОМЕНДОВАЛИ ДРУЗЬЯ</label>        
+            
+            <input class="form__checkbox" type="checkbox" id="social" name="social">
+            <label class="form__label--checkbox" for="social">СОЦ. СЕТИ</label>        
+            
+            <input class="form__checkbox" type="checkbox" id="yet" name="yet">
+            <label class="form__label--checkbox" for="yet">УЖЕ ЕЗДИЛ</label>
+          </div>
+        </div>
+        
+        <div class="form__rules">
+          <input class="form__checkbox--small" type="checkbox" id="subscribe" name="subscribe">
+          <label class="form__label--small" for="subscribe">Получать свежие предложения по электронной почте</label>
+
+          <p class="form__posttext">Каждую неделю мы делаем для вас обзор лучших экспедиций, статей и лайфхаков для путешественников. Если вдруг вам не понравится, вы сможете отписаться в любой момент.</p>
+
+          <input class="form__checkbox--small agree-init" type="checkbox" id="access" name="access" required>
+          <label class="form__label--small popup-init" for="access">С обработкой своих персональных данных согласен. <span class="require">*</span></label>
+
+          <p class="form__posttext">Отправляя заявку я подтверждаю согласие с условиями Пользовательского соглашения</p>
+
+          <p class="form__posttext--rules"><span class="require">*</span> Поля, которые надо обязательно заполнить</p>
+        </div>
+        <button class="form__submit" type="submit">ОТПРАВИТЬ</button>
+      </form>
+    </section>
+    <footer class="footer">
+      <div class="footer__top"><a href="tel:88001234567" class="footer__phone">8 (800) 123-45-67</a></div>
+      <div class="footer__left"></div>
+      <div class="footer__bottom"><a href="tel:88001234567" class="footer__phone">8 (800) 123-45-67</a></div>
+    </footer>
+  </main>
+  <div id="popup">
+    <div class="modal-popup agree">      
+      <h2 class="modal-popup__title">Пользовательское соглашение</h2>
+      <p class="modal-popup__text">Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание направлений прогрессивного развития. Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и реализации систем массового участия. Разнообразный и богатый опыт новая модель организационной деятельности позволяет оценить значение направлений прогрессивного развития. Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач.</p>
+      <p class="modal-popup__text">Равным образом дальнейшее развитие различных форм деятельности способствует подготовки и реализации форм развития. Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание существенных финансовых и административных условий.</p>
+      <p class="modal-popup__text">Таким образом укрепление и развитие структуры представляет собой интересный эксперимент проверки дальнейших направлений развития. Значимость этих проблем настолько очевидна, что новая модель организационной деятельности позволяет выполнять важные задания по разработке существенных финансовых и административных условий. Равным образом новая модель организационной деятельности позволяет выполнять важные задания по разработке существенных финансовых и административных условий. Разнообразный и богатый опыт рамки и место обучения кадров влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий.</p>
+      <p class="modal-popup__text">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности позволяет оценить значение дальнейших направлений развития. Повседневная практика показывает, что сложившаяся структура организации требуют от нас анализа систем массового участия. Повседневная практика показывает, что консультация с широким активом представляет собой интересный эксперимент проверки систем массового участия. С другой стороны постоянный количественный рост и сфера нашей активности обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. Товарищи! сложившаяся структура организации позволяет выполнять важные задания по разработке существенных финансовых и административных условий.</p>
+      <p class="modal-popup__text">Идейные соображения высшего порядка, а также сложившаяся структура организации обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Равным образом рамки и место обучения кадров способствует подготовки и реализации существенных финансовых и административных условий. Разнообразный и богатый опыт новая модель организационной деятельности обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий. Товарищи! постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и модернизации дальнейших направлений развития.</p>
+      <button class="modal-popup__button agreed">СОГЛАСЕН</button>
+      <button class="modal-popup__button disagreed">НЕСОГЛАСЕН</button>
+      <span class="close close-popup">×</span>
+    </div>
+  </div>
+</body>
+</html>
